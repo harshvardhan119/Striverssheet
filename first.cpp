@@ -96,3 +96,11 @@ int main()
     return 0;
 }
 //Basic of Array and Strings
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[];
+    for 
+
+    return 0;
+}
