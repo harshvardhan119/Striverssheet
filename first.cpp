@@ -95,12 +95,56 @@ int main()
     
     return 0;
 }
+
+
+
 //Basic of Array and Strings
-#include<iostream>
+# include<iostream>
 using namespace std;
 int main(){
-    int arr[];
-    for 
-
+   
+    int a;
+    cout<<"enter number of element of array:";
+    cin>>a;
+     int arr[a];
+    for (int i=0;i<a;i++){
+        cin >> arr[i] ;
+    }
+    cout<<"the array is:";
+    for (int i=0;i<a;i++){
+        cout<<arr[i];
+    }
+    
     return 0;
 }
+//leetcode first question
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix) {
+
+        int m = matrix.size();
+        int n = matrix[0].size();
+        int a = 0;
+        int b = 0;
+        int i;
+        int j;
+        int matrix1[m][n];
+
+        if (m >= 1 && m <= 200 && n >= 1 && n <= 200) {
+            for (i = 0; i < m; i++) {
+                for (j = 0; j < n; j++) {
+                    if (matrix[i][j] == 0) {
+                        while (j < n && a < m) {
+                            matrix1[a][j] = 0;
+                            a = a + 1;
+                        }
+                        while (i <= m && b < n) {
+                            matrix1[i][b] = 0;
+                            b = b + 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
