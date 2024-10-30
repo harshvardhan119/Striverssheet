@@ -148,3 +148,41 @@ public:
         }
     }
 };
+
+//striever sheet for loop Fibonacci series
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{       int n;
+        cin>>n ;
+        int a = 1;
+        int b =1;
+        if (n>0){
+        for (int i=0;i<n-2;i++){
+                int c=a+b;
+                a=b;
+                b=c;
+        }
+        cout<<b;}
+        else{
+                cout<<a;
+        }
+}
+//striever sheet while loop quesition Here, we will use a while loop and print a number n's table in reverse order.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+    int i =10;
+    while(i>0){
+        cout<<a*i<<" ";
+        i--;
+    }
+    return 0;
+}
+
