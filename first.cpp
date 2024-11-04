@@ -20,6 +20,8 @@ int main()
 
     
 }
+
+
 //Datatypes
 #include<iostream>
 using namespace std;
@@ -57,6 +59,9 @@ int main()
    return 0;
    
 }
+
+
+
 //Switch Statement
 #include<iostream>
     using namespace std;
@@ -117,6 +122,9 @@ int main(){
     
     return 0;
 }
+
+
+
 //leetcode first question
 class Solution {
 public:
@@ -149,6 +157,8 @@ public:
     }
 };
 
+
+
 //striever sheet for loop Fibonacci series
 #include<bits/stdc++.h>
 using namespace std;
@@ -169,6 +179,8 @@ int main()
                 cout<<a;
         }
 }
+
+
 //striever sheet while loop quesition Here, we will use a while loop and print a number n's table in reverse order.
 
 #include <iostream>
