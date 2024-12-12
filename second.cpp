@@ -268,4 +268,33 @@ void nBinaryTriangle(int n) {
 }
 
 
+// Sample Input 3 :
+// 7
+// Sample Output 3 :
+// 1                         1
+// 1 2                     2 1
+// 1 2 3                 3 2 1
+// 1 2 3 4             4 3 2 1
+// 1 2 3 4 5         5 4 3 2 1
+// 1 2 3 4 5 6     6 5 4 3 2 1
+// 1 2 3 4 5 6 7 7 6 5 4 3 2 1  
+
+---->>
+void numberCrown(int n) {
+    int k=(2*n)-2;
+    for(int i=1;i<=n;i++){
+       
+      for (int j = 1; j <= i; j++) {
+        cout << j<<" ";
+        }
+        for(int a=k;a>0;a--){
+            cout<<" ";
+        }
+        for (int j = i; j >0; j--) {
+        cout << j<<" ";
+        }
+      cout<<endl;
+      k=k-4;
+    }
+}
 
