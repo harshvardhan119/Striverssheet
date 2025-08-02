@@ -30,4 +30,20 @@ c++
         }
     }
     //Insertion Sort
+      void insertionSort(vector<int>& arr) {
+      int a = arr.size();
+      for(int i=1;i<a-1;i++){
+         
+            int j=i;
+            while(j>0 &&  arr[j] < arr[j-1]){
+                int mid =arr[j-1];
+                arr[j-1]=arr[j];
+                arr[j]= mid;
+                j--;
+            }
+             
+                
+      }
+    }
+    //Merge Sort
     
